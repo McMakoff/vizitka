@@ -9,9 +9,14 @@
   	<meta name="description" content="Описание">
   	<meta name="keywords" content="ключевые слова">
 	<script>
-		var imgs = [];
-	var imgSrc = [
-			"img/gallery/number/n_1.jpeg",
+		function preloadImages() {
+		  for (var i = 0; i < arguments.length; i++) {
+		    new Image().src = arguments[i];
+		  }
+		}
+
+		preloadImages(
+		  "img/gallery/number/n_1.jpeg",
 			"img/gallery/number/n_2.jpeg",
 			"img/gallery/number/bn_1.jpeg",
 			"img/gallery/number/n_3.jpeg",
@@ -56,11 +61,7 @@
 			"img/gallery/brelki/br_7.jpeg",
 			"img/gallery/brelki/br_8.jpeg",
 			"img/gallery/brelki/br_9.jpeg"
-		];
-	for(var i = 0; i < imgSrc.length; i++){
-		imgs[i] = new Image();
-		imgs[i].src = imgSrc[i];
-	}
+		);
 	</script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400i,700,800&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
