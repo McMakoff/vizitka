@@ -34,7 +34,7 @@ jQuery(document).ready(function($){
 		targetImg_2,
 		targetImg_3;
 
-	var imgs = [];
+	/*var imgs = [];
 	var imgSrc = [
 			"../img/gallery/number/n_1.jpeg",
 			"../img/gallery/number/n_2.jpeg",
@@ -85,7 +85,7 @@ jQuery(document).ready(function($){
 	for(var i = 0; i < imgSrc.length; i++){
 		imgs[i] = new Image();
 		imgs[i].src = imgSrc[i];
-	}
+	}*/
 
 	function my_gallery(li, links, lightbox, overlay, prev, next, liIndex, targetImg) {
 		function replaceImg(src) {
